@@ -3,7 +3,7 @@ Bucket list tracker application using AWS Amplify, React, GraphQL, AWS AppSync, 
 
 ## Project Overview
 
-This project guides you through deploying a simple Bucket List Tracker application using AWS Amplify. The application will allow users to add, view, and delete items from their bucket list, with authentication features for secure user management. learn how to create a React application, set up authentication, and manage backend services using AWS AppSync and DynamoDB. The project is cost-free, falling within AWS Free Tier limits.
+This project deploys a simple Bucket List Tracker application using AWS Amplify. The application will allow users to add, view, and delete items from their bucket list, with authentication features for secure user management. This helps with learning how to create a React application, set up authentication, and manage backend services using AWS AppSync and DynamoDB. The project is for practicing with AWS and falls within the AWS Free Tier limits.
 
 ### Table of Contents
 ## Introduction
