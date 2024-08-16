@@ -11,5 +11,46 @@
       "StackId": "arn:aws:cloudformation:us-east-2:127214185839:stack/amplify-bucketlisttracker-dev-4143a/18258780-5b87-11ef-9ef4-0ad0098551bf",
       "AmplifyAppId": "d3ys5jxkacdry"
     }
+  },
+  "auth": {
+    "bucketlisttrackerc1f9af7d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-4143a-deployment/amplify-cfn-templates/auth/bucketlisttrackerc1f9af7d-cloudformation-template.json",
+        "logicalId": "authbucketlisttrackerc1f9af7d"
+      },
+      "lastPushTimeStamp": "2024-08-16T04:30:05.362Z",
+      "output": {
+        "UserPoolId": "us-east-2_pZZxVjsJK",
+        "AppClientIDWeb": "5fbg20204erqd112bcvp8305f9",
+        "AppClientID": "55i3pd9tuc7o0q1jo2n6gbtp90",
+        "IdentityPoolId": "us-east-2:d6032942-2ea0-4e98-82c8-cb5876ed2b32",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:127214185839:userpool/us-east-2_pZZxVjsJK",
+        "IdentityPoolName": "bucketlisttrackerc1f9af7d_identitypool_c1f9af7d__dev",
+        "UserPoolName": "bucketlisttrackerc1f9af7d_userpool_c1f9af7d"
+      },
+      "lastPushDirHash": "KufT117mhsUkuFhOdSrg9312PTA="
+    }
   }
 }
