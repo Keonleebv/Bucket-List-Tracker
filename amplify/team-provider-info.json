@@ -1,5 +1,5 @@
 {
-  "providers": {
+  "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-bucketlisttracker-dev-4143a-authRole",
       "UnauthRoleArn": "arn:aws:iam::127214185839:role/amplify-bucketlisttracker-dev-4143a-unauthRole",

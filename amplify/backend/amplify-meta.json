@@ -1,56 +1,15 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-bucketlisttracker-dev-bf1f7-authRole",
-      "UnauthRoleArn": "arn:aws:iam::127214185839:role/amplify-bucketlisttracker-dev-bf1f7-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::127214185839:role/amplify-bucketlisttracker-dev-bf1f7-authRole",
+      "AuthRoleName": "amplify-bucketlisttracker-dev-4143a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::127214185839:role/amplify-bucketlisttracker-dev-4143a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::127214185839:role/amplify-bucketlisttracker-dev-4143a-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-bucketlisttracker-dev-bf1f7-deployment",
-      "UnauthRoleName": "amplify-bucketlisttracker-dev-bf1f7-unauthRole",
-      "StackName": "amplify-bucketlisttracker-dev-bf1f7",
-      "StackId": "arn:aws:cloudformation:us-east-2:127214185839:stack/amplify-bucketlisttracker-dev-bf1f7/ee6fb590-5aba-11ef-98c9-0ad3fe109df5",
-      "AmplifyAppId": "d2y7v2bcwhjzcp"
-    }
-  },
-  "auth": {
-    "bucketlisttracker82fb83e6": {
-      "customAuth": false,
-      "dependsOn": [],
-      "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": []
-        },
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "socialProviders": [],
-        "usernameAttributes": [],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      },
-      "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "output": {
-        "UserPoolId": "us-east-2_89qHsKb7t",
-        "AppClientIDWeb": "7oc4dqldhlu6poabths33m1m3n",
-        "AppClientID": "4p2ankc642om776t4d2gagevpv",
-        "IdentityPoolId": "us-east-2:8406ecdc-4f03-452f-af51-516a935ccafb",
-        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:127214185839:userpool/us-east-2_89qHsKb7t",
-        "IdentityPoolName": "bucketlisttracker82fb83e6_identitypool_82fb83e6__dev",
-        "UserPoolName": "bucketlisttracker82fb83e6_userpool_82fb83e6"
-      },
-      "lastPushTimeStamp": "2024-08-15T05:48:31.145Z",
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-bf1f7-deployment/amplify-cfn-templates/auth/bucketlisttracker82fb83e6-cloudformation-template.json",
-        "logicalId": "authbucketlisttracker82fb83e6"
-      },
-      "lastPushDirHash": "pdQ8J2qF0K7e8sJkrKc1oEVl/3w="
+      "DeploymentBucketName": "amplify-bucketlisttracker-dev-4143a-deployment",
+      "UnauthRoleName": "amplify-bucketlisttracker-dev-4143a-unauthRole",
+      "StackName": "amplify-bucketlisttracker-dev-4143a",
+      "StackId": "arn:aws:cloudformation:us-east-2:127214185839:stack/amplify-bucketlisttracker-dev-4143a/18258780-5b87-11ef-9ef4-0ad0098551bf",
+      "AmplifyAppId": "d3ys5jxkacdry"
     }
   }
 }
