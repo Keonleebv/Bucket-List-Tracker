@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-4143a-deployment/amplify-cfn-templates/auth/bucketlisttrackerc1f9af7d-cloudformation-template.json",
         "logicalId": "authbucketlisttrackerc1f9af7d"
       },
-      "lastPushTimeStamp": "2024-08-16T04:30:05.362Z",
+      "lastPushTimeStamp": "2024-08-16T05:36:04.643Z",
       "output": {
         "UserPoolId": "us-east-2_pZZxVjsJK",
         "AppClientIDWeb": "5fbg20204erqd112bcvp8305f9",
@@ -51,6 +51,48 @@
         "UserPoolName": "bucketlisttrackerc1f9af7d_userpool_c1f9af7d"
       },
       "lastPushDirHash": "KufT117mhsUkuFhOdSrg9312PTA="
+    }
+  },
+  "api": {
+    "bucketlisttracker": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "bucketlisttrackerc1f9af7d"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authbucketlisttrackerc1f9af7d"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 7,
+                "apiKeyExpirationDate": "2024-08-23T05:35:26.177Z",
+                "description": "test"
+              }
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "oqvpgrox55ftdcfadpam52xpoq",
+        "GraphQLAPIEndpointOutput": "https://oylj226b7rckdd4xsveqtftp5u.appsync-api.us-east-2.amazonaws.com/graphql"
+      },
+      "lastPushTimeStamp": "2024-08-16T05:36:04.647Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-4143a-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apibucketlisttracker"
+      }
     }
   }
 }

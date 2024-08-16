@@ -252,6 +252,26 @@
         }
       }
     },
+    "apibucketlisttracker": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-4143a-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "AppSyncApiName": "bucketlisttracker",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authbucketlisttrackerc1f9af7d",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "S3DeploymentBucket": "amplify-bucketlisttracker-dev-4143a-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/c12d70c41623f8583a6582015c6388b08814bdbb",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",

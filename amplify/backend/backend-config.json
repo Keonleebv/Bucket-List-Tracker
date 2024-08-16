@@ -1,4 +1,39 @@
 {
+  "api": {
+    "bucketlisttracker": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "bucketlisttrackerc1f9af7d"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-08-23T05:35:26.177Z",
+                "apiKeyExpirationDays": 7,
+                "description": "test"
+              },
+              "authenticationType": "API_KEY"
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authbucketlisttrackerc1f9af7d"
+            }
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "bucketlisttrackerc1f9af7d": {
       "customAuth": false,
