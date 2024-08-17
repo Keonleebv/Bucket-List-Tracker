@@ -13,7 +13,7 @@ function App() {
       {({ signOut, user }) => (
         <div className="App">
           <header className="App-header">
-            <h1>Bucket List Tracker</h1>
+            <h1>To-do List</h1>
             <h3>Welcome, {user.username}</h3>  {/* Display the logged-in user's username */}
             <button onClick={signOut}>Sign out</button>
           </header>

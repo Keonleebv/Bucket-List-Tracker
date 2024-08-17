@@ -26,7 +26,7 @@ const BucketList = () => {
 
   return (
     <div>
-      <h2>My Bucket List</h2>
+      <h2>Tasks</h2>
       <BucketAdd onAdd={addItem} />
       {selectedItem ? (
         <BucketItemView item={selectedItem} onClose={closeView} />
