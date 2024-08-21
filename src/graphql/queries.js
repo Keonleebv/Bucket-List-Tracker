@@ -1,31 +1,35 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getBucketItem = /* GraphQL */ `
-  query GetBucketItem($id: ID!) {
-    getBucketItem(id: $id) {
+export const getBucketListItem = /* GraphQL */ `
+  query GetBucketListItem($id: ID!) {
+    getBucketListItem(id: $id) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const listBucketItems = /* GraphQL */ `
-  query ListBucketItems(
-    $filter: ModelBucketItemFilterInput
+export const listBucketListItems = /* GraphQL */ `
+  query ListBucketListItems(
+    $filter: ModelBucketListItemFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listBucketItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listBucketListItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        title
+        name
         description
         completed
+        completedAt
+        owner
         createdAt
         updatedAt
         __typename

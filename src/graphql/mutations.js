@@ -1,48 +1,54 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createBucketItem = /* GraphQL */ `
-  mutation CreateBucketItem(
-    $input: CreateBucketItemInput!
-    $condition: ModelBucketItemConditionInput
+export const createBucketListItem = /* GraphQL */ `
+  mutation CreateBucketListItem(
+    $input: CreateBucketListItemInput!
+    $condition: ModelBucketListItemConditionInput
   ) {
-    createBucketItem(input: $input, condition: $condition) {
+    createBucketListItem(input: $input, condition: $condition) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const updateBucketItem = /* GraphQL */ `
-  mutation UpdateBucketItem(
-    $input: UpdateBucketItemInput!
-    $condition: ModelBucketItemConditionInput
+export const updateBucketListItem = /* GraphQL */ `
+  mutation UpdateBucketListItem(
+    $input: UpdateBucketListItemInput!
+    $condition: ModelBucketListItemConditionInput
   ) {
-    updateBucketItem(input: $input, condition: $condition) {
+    updateBucketListItem(input: $input, condition: $condition) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const deleteBucketItem = /* GraphQL */ `
-  mutation DeleteBucketItem(
-    $input: DeleteBucketItemInput!
-    $condition: ModelBucketItemConditionInput
+export const deleteBucketListItem = /* GraphQL */ `
+  mutation DeleteBucketListItem(
+    $input: DeleteBucketListItemInput!
+    $condition: ModelBucketListItemConditionInput
   ) {
-    deleteBucketItem(input: $input, condition: $condition) {
+    deleteBucketListItem(input: $input, condition: $condition) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename

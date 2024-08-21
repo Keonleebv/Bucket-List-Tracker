@@ -199,15 +199,35 @@
         }
       }
     },
-    "authbucketlisttrackerc1f9af7d": {
+    "apibucketlisttracker": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-4143a-deployment/amplify-cfn-templates/auth/bucketlisttrackerc1f9af7d-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-c8e39-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "Parameters": {
-          "identityPoolName": "bucketlisttrackerc1f9af7d_identitypool_c1f9af7d",
+          "AppSyncApiName": "bucketlisttracker",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authbucketlisttracker355c1edb",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "S3DeploymentBucket": "amplify-bucketlisttracker-dev-c8e39-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/95fe88934c29773fa58b3a2036f6089fefd2a1d8",
+          "env": "dev"
+        }
+      }
+    },
+    "authbucketlisttracker355c1edb": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-bucketlisttracker-dev-c8e39-deployment/amplify-cfn-templates/auth/bucketlisttracker355c1edb-cloudformation-template.json",
+        "Parameters": {
+          "identityPoolName": "bucketlisttracker355c1edb_identitypool_355c1edb",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "bucketc1f9af7d",
-          "userPoolName": "bucketlisttrackerc1f9af7d_userpool_c1f9af7d",
+          "resourceNameTruncated": "bucket355c1edb",
+          "userPoolName": "bucketlisttracker355c1edb_userpool_355c1edb",
           "autoVerifiedAttributes": "email",
           "mfaConfiguration": "OFF",
           "mfaTypes": "SMS Text Message",
@@ -224,10 +244,10 @@
           "userpoolClientRefreshTokenValidity": 30,
           "userpoolClientWriteAttributes": "email",
           "userpoolClientReadAttributes": "email",
-          "userpoolClientLambdaRole": "bucketc1f9af7d_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "bucket355c1edb_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "c1f9af7d",
-          "resourceName": "bucketlisttrackerc1f9af7d",
+          "sharedId": "355c1edb",
+          "resourceName": "bucketlisttracker355c1edb",
           "authSelections": "identityPoolAndUserPool",
           "useDefault": "default",
           "userPoolGroupList": "",
@@ -256,7 +276,7 @@
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authbucketlisttrackerc1f9af7d"
+        "authbucketlisttracker355c1edb"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -366,7 +386,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authbucketlisttrackerc1f9af7d",
+            "authbucketlisttracker355c1edb",
             "Outputs.IdentityPoolId"
           ]
         },

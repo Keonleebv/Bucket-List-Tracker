@@ -7,7 +7,7 @@
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "bucketlisttrackerc1f9af7d"
+          "resourceName": "bucketlisttracker355c1edb"
         }
       ],
       "output": {
@@ -15,7 +15,7 @@
           "additionalAuthenticationProviders": [
             {
               "apiKeyConfig": {
-                "apiKeyExpirationDate": "2024-08-23T05:35:26.177Z",
+                "apiKeyExpirationDate": "2024-08-25T20:06:54.833Z",
                 "apiKeyExpirationDays": 7,
                 "description": "test"
               },
@@ -25,7 +25,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authbucketlisttrackerc1f9af7d"
+              "userPoolId": "authbucketlisttracker355c1edb"
             }
           }
         }
@@ -35,7 +35,7 @@
     }
   },
   "auth": {
-    "bucketlisttrackerc1f9af7d": {
+    "bucketlisttracker355c1edb": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {

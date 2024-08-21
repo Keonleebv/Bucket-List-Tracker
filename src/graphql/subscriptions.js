@@ -1,45 +1,54 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateBucketItem = /* GraphQL */ `
-  subscription OnCreateBucketItem(
-    $filter: ModelSubscriptionBucketItemFilterInput
+export const onCreateBucketListItem = /* GraphQL */ `
+  subscription OnCreateBucketListItem(
+    $filter: ModelSubscriptionBucketListItemFilterInput
+    $owner: String
   ) {
-    onCreateBucketItem(filter: $filter) {
+    onCreateBucketListItem(filter: $filter, owner: $owner) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const onUpdateBucketItem = /* GraphQL */ `
-  subscription OnUpdateBucketItem(
-    $filter: ModelSubscriptionBucketItemFilterInput
+export const onUpdateBucketListItem = /* GraphQL */ `
+  subscription OnUpdateBucketListItem(
+    $filter: ModelSubscriptionBucketListItemFilterInput
+    $owner: String
   ) {
-    onUpdateBucketItem(filter: $filter) {
+    onUpdateBucketListItem(filter: $filter, owner: $owner) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename
     }
   }
 `;
-export const onDeleteBucketItem = /* GraphQL */ `
-  subscription OnDeleteBucketItem(
-    $filter: ModelSubscriptionBucketItemFilterInput
+export const onDeleteBucketListItem = /* GraphQL */ `
+  subscription OnDeleteBucketListItem(
+    $filter: ModelSubscriptionBucketListItemFilterInput
+    $owner: String
   ) {
-    onDeleteBucketItem(filter: $filter) {
+    onDeleteBucketListItem(filter: $filter, owner: $owner) {
       id
-      title
+      name
       description
       completed
+      completedAt
+      owner
       createdAt
       updatedAt
       __typename
