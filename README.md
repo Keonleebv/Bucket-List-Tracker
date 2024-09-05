@@ -9,4 +9,4 @@ This project deploys a simple Task Tracker application using AWS Amplify. The ap
 
 Access the application hosted on AWS Amplify here!
 
-https://main.dj7ld4qzj8jws.amplifyapp.com/
+<!-- https://main.dj7ld4qzj8jws.amplifyapp.com/ -->
