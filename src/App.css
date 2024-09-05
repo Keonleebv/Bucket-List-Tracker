@@ -52,6 +52,10 @@ h1 {
   border-radius: 8px;
   background-color: #fafafa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Breaks long words */
+  word-break: break-all; /* Ensures breaking for very long words */
+  max-width: 100%;      
+  white-space: normal;  
 }
 
 .bucket-items span {
